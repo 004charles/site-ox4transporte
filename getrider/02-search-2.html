@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Solicitar Moto | OX4 Transportes</title>
+    <meta content="OX4 Transportes" name="author">
+    <meta content="OX4 Transportes - Táxi, Moto e Transfer" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="assets/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
+</head>
+
+<body class="page-search">
+
+    <!-- Loader-->
+    <div id="page-preloader"><span class="spinner border-t_second_b border-t_prim_a"></span></div>
+    <!-- Loader end-->
+
+
+    <div class="page-wrapper">
+        <header class="page-header page-header--search">
+            <div class="uk-container uk-container-expand">
+                <div class="page-header__inner">
+                    <div class="page-header__logo">
+                        <div class="logo"><a class="logo__link" href="index.html"><img class="logo__img" src="assets/img/logo.png" alt="OX4 Transportes"></a></div>
+                    </div>
+                    <div class="page-header__menu">
+                        <nav class="page-nav" data-uk-navbar="">
+                            <ul class="uk-navbar-nav">
+                                <li><a href="01_landing_page.html"> <img src="assets/img/search.svg" data-uk-svg alt="home">Início</a></li>
+                                <li><a href="02-search-1.html"> <img src="assets/img/car.svg" data-uk-svg alt="servicos">Serviços</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="02-search-1.html">Solicitar Táxi</a></li>
+                                            <li><a href="02-search-2.html">Solicitar Moto</a></li>
+                                            <li><a href="02-search-3.html">Transfer e Corridas</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li> <a href="01_landing_page.html#como-funciona">Como Funciona</a></li>
+                                <li><a href="03_blog-1.html"> <img src="assets/img/news-paper.svg" data-uk-svg alt="news-paper">Notícias</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="03_blog-1.html">Lista de notícias</a></li>
+                                            <li><a href="04_blog-2.html">Grade de notícias</a></li>
+                                            <li><a href="05_blog-post.html">Matéria</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li> <a href="06_contact.html"> <img src="assets/img/help2.svg" data-uk-svg alt="help2">Contato</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="page-header__phone"><a class="uk-button uk-button-danger" href="tel:+244924291225"> <i class="flaticon-phone-call"></i><span>+244 924 291 225</span></a></div>
+                    <div class="page-header__btn"> <a class="uk-button uk-button-danger" href="02-search-2.html#offcanvas" data-uk-toggle data-uk-icon="menu"></a></div>
+                </div>
+            </div>
+        </header>
+        <main class="page-main">
+            <div class="main-search-grid uk-grid uk-child-width-1-2@xl uk-grid-match uk-grid-collapse" data-uk-grid>
+                <div>
+                    <div class="main-search-section main-search-section--left">
+                        <div class="search-box">
+                            <div class="search-box__title">Para onde você quer ir?</div>
+                            <form action="02-search-2.html#">
+                                <div class="search-form">
+                                    <div class="uk-grid uk-child-width-1-2@s uk-grid-collapse" data-uk-grid>
+                                        <div>
+                                            <div class="uk-inline uk-width-1-1"><button class="uk-button uk-button-default" type="button"><span><b>Local de partida</b> (Cidade, aeroporto, endereço)</span><i class="fas fa-map-marker-alt"></i></button>
+                                                <div data-uk-drop="mode: click">
+                                                    <div class="uk-card uk-card-body uk-card-default">
+                                                        <div class="search-list-head"> <span>Cidade, aeroporto, endereço, hotel</span><a href="02-search-2.html#!"> <span>abrir mapa </span><i class="fas fa-map-marker-alt"> </i></a></div>
+                                                        <ul class="search-list uk-list uk-list-divider">
+                                                            <li><a href="02-search-2.html#!"><img src="assets/img/ico-search-1.png" alt="icon"><span>Localização atual</span></a></li>
+                                                            <li><a href="02-search-2.html#!"><img src="assets/img/ico-search-2.png" alt="icon"><span>Aeroporto Quatro de Fevereiro, Luanda</span></a></li>
+                                                            <li><a href="02-search-2.html#!"><img src="assets/img/ico-search-3.png" alt="icon"><span>Hotel Nacional, Luanda</span></a></li>
+                                                            <li><a href="02-search-2.html#!"><img src="assets/img/ico-search-4.png" alt="icon"><span>Talatona, Luanda</span></a></li>
+                                                            <li><a href="02-search-2.html#!"><img src="assets/img/ico-search-5.png" alt="icon"><span>Avenida Marginal, Luanda</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div><input class="uk-input input-data js-data" type="text" placeholder="Data / Hora"></div>
+                                        <div>
+                                            <div class="uk-inline uk-width-1-1"><button class="uk-button uk-button-default" type="button"><span><b>Local de destino</b> (Para onde você vai)</span><i class="fas fa-map-marker-alt"></i></button>
+                                                <div data-uk-drop="mode: click">
+                                                    <div class="uk-card uk-card-body uk-card-default">
+                                                        <div class="search-list-head"> <span>Cidade, aeroporto, endereço, hotel</span><a href="02-search-2.html#!"> <span>abrir mapa </span><i class="fas fa-map-marker-alt"> </i></a></div>
+                                                        <ul class="search-list uk-list uk-list-divider">
+                                                            <li><a href="02-search-2.html#!"><img src="assets/img/ico-search-1.png" alt="icon"><span>Localização atual</span></a></li>
+                                                            <li><a href="02-search-2.html#!"><img src="assets/img/ico-search-2.png" alt="icon"><span>Aeroporto Quatro de Fevereiro, Luanda</span></a></li>
+                                                            <li><a href="02-search-2.html#!"><img src="assets/img/ico-search-3.png" alt="icon"><span>Hotel Nacional, Luanda</span></a></li>
+                                                            <li><a href="02-search-2.html#!"><img src="assets/img/ico-search-4.png" alt="icon"><span>Talatona, Luanda</span></a></li>
+                                                            <li><a href="02-search-2.html#!"><img src="assets/img/ico-search-5.png" alt="icon"><span>Avenida Marginal, Luanda</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div> <input class="input-user uk-input" type="text" placeholder="Nº de passageiros"></div>
+                                    </div>
+                                </div>
+                                <div class="search-form-btn"> <button class="uk-button uk-button-danger" type="submit"><span class="uk-margin-small-right" data-uk-icon="search"> </span><span>BUSCAR</span></button></div>
+                            </form>
+                        </div>
+                        <footer class="page-footer page-footer--search">
+                            <div class="page-footer__inner">
+                                <div class="page-footer__social">
+                                    <ul class="social">
+                                        <li><a href="02-search-2.html#!"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="02-search-2.html#!"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="02-search-2.html#!"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="02-search-2.html#!"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="02-search-2.html#!"><i class="fas fa-rss"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="page-footer__copy"> <span>&copy; 2026 OX4 Transportes Ltda. Todos os direitos reservados.</span></div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <div class="uk-background-muted">
+                    <div class="main-search-section">
+                        <div class="main-search-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6054.772117557924!2d-73.78921662486367!3d40.643419580864624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2665781eeb7bb%3A0xd12a76664e19fa27!2zQmx1ZSBQYXJraW5nLCBRdWVlbnMsIE5ZIDExNDMwLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1613820738356!5m2!1sru!2sua" loading="lazy"></iframe></div>
+                    </div>
+                </div>
+            </div>
+            <div id="offcanvas" data-uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-flex-between"><button class="uk-offcanvas-close" type="button" data-uk-close=""></button>
+                    <div class="uk-margin">
+                        <div class="uk-margin-bottom">
+                            <div class="logo"><a class="logo__link" href="01_landing_page.html"><img class="logo__img" src="assets/img/logo-white.png" alt="OX4 Transportes"></a></div>
+                        </div>
+                        <div class="uk-margin">
+                            <ul class="uk-nav uk-nav-default uk-nav-parent-icon" data-uk-nav>
+                                <li><a href="01_landing_page.html"> <img src="assets/img/search.svg" data-uk-svg alt="home">Início</a></li>
+                                <li class="uk-parent"><a href="02-search-1.html"> <img src="assets/img/car.svg" data-uk-svg alt="servicos">Serviços</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="02-search-1.html">Solicitar Táxi</a></li>
+                                        <li><a href="02-search-2.html">Solicitar Moto</a></li>
+                                        <li><a href="02-search-3.html">Transfer e Corridas</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a href="01_landing_page.html#como-funciona">Como Funciona</a></li>
+                                <li class="uk-parent"> <a href="03_blog-1.html"> <img src="assets/img/news-paper.svg" data-uk-svg alt="news-paper">Notícias</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="03_blog-1.html">Lista de notícias</a></li>
+                                        <li><a href="04_blog-2.html">Grade de notícias</a></li>
+                                        <li><a href="05_blog-post.html">Matéria</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a href="06_contact.html"> <img src="assets/img/help2.svg" data-uk-svg alt="help2">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="uk-margin"><a class="uk-button uk-button-danger uk-width-1-1" href="tel:+244924291225"> <img src="assets/img/call.svg" alt="call" data-uk-svg><span>+244 924 291 225</span></a></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/uikit-icons.min.js"></script>
+    <script src="assets/js/datepicker.min.js"></script>
+    <script src="assets/js/i18n/datepicker.en.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

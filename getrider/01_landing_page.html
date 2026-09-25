@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>OX4 Transportes - Táxi, Moto e Transfer 24h</title>
+    <meta content="Chernyh Mihail" name="author">
+    <meta content="OX4 Transportes - Táxi, Moto e Transfer" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="assets/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
+</head>
+
+<body class="page-home">
+
+    <!-- Loader-->
+    <div id="page-preloader"><span class="spinner border-t_second_b border-t_prim_a"></span></div>
+    <!-- Loader end-->
+
+
+    <div class="page-wrapper">
+        <header class="page-header">
+            <div class="page-header__scroll" data-uk-sticky>
+                <div class="uk-container">
+                    <div class="page-header__inner">
+                        <div class="page-header__logo">
+                            <div class="logo"><a class="logo__link" href="index.html"><img class="logo__img" src="assets/img/logo.png" alt="OX4 Transportes"></a></div>
+                        </div>
+                        <div class="page-header__menu">
+                            <nav class="page-nav" data-uk-navbar="">
+                                <ul class="uk-navbar-nav">
+                                    <li><a href="01_landing_page.html"> <img src="assets/img/search.svg" data-uk-svg alt="home">Início</a></li>
+                                    <li><a href="02-search-1.html"> <img src="assets/img/car.svg" data-uk-svg alt="servicos">Serviços</a>
+                                        <div class="uk-navbar-dropdown">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="02-search-1.html">Solicitar Táxi</a></li>
+                                                <li><a href="02-search-2.html">Solicitar Moto</a></li>
+                                                <li><a href="02-search-3.html">Transfer e Corridas</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li> <a href="01_landing_page.html#como-funciona">Como Funciona</a></li>
+                                    <li><a href="03_blog-1.html"> <img src="assets/img/news-paper.svg" data-uk-svg alt="news-paper">Notícias</a>
+                                        <div class="uk-navbar-dropdown">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="03_blog-1.html">Lista de notícias</a></li>
+                                                <li><a href="04_blog-2.html">Grade de notícias</a></li>
+                                                <li><a href="05_blog-post.html">Matéria</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li> <a href="06_contact.html"> <img src="assets/img/help2.svg" data-uk-svg alt="help2">Contato</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="page-header__phone"><a class="uk-button uk-button-danger" href="tel:+244924291225"> <i class="flaticon-phone-call"></i><span>+244 924 291 225</span></a></div>
+                        <div class="page-header__btn"> <a class="uk-button uk-button-danger" href="01_landing_page.html#offcanvas" data-uk-toggle data-uk-icon="menu"></a></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page-main">
+            <div class="section-banner">
+                <div class="section-banner__bg">
+                    <div class="uk-cover-container"><img src="assets/img/img-banner.jpg" alt="img-banner" data-uk-cover><canvas class="slide-canvas"></canvas></div>
+                </div>
+                <div class="section-banner__content uk-text-center">
+                    <div class="uk-overlay uk-position-center-left uk-width-1-1">
+                        <div class="uk-container uk-width-1-1">
+                            <div class="section-banner__title"><span>Táxi, moto e transfer &bull; Atendimento 24 horas</span>
+                                <h1 class="decor-top">Precisa viajar? Chame a OX4<br> ou solicite uma moto em minutos</h1>
+                            </div>
+                            <div class="section-banner__btn"> <a class="uk-button uk-button-default" href="02-search-1.html">Solicitar corrida</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-popular-places" id="welcome">
+                <div class="uk-container">
+                    <div class="popular-places">
+                        <div class="popular-places__head">
+                            <div class="popular-places__title">Para onde você quer ir hoje?</div>
+                            <div class="popular-places__more"> <a href="02-search-3.html">Ver todas as rotas </a></div>
+                        </div>
+                        <div class="popular-places__body">
+                            <div class="uk-grid uk-child-width-1-3@m" data-uk-grid>
+                                <div>
+                                    <div class="popular-places-item"><a class="popular-places-item__link" href="02-search-1.html"><span class="popular-places-item__title">Centro <small>para</small> Aeroporto</span><span class="popular-places-item__price">Kz 55</span><span data-uk-icon="chevron-right"></span></a></div>
+                                </div>
+                                <div>
+                                    <div class="popular-places-item"><a class="popular-places-item__link" href="02-search-2.html"><span class="popular-places-item__title">Casa <small>para</small> Trabalho</span><span class="popular-places-item__price">Kz 22</span><span data-uk-icon="chevron-right"></span></a></div>
+                                </div>
+                                <div>
+                                    <div class="popular-places-item"><a class="popular-places-item__link" href="02-search-3.html"><span class="popular-places-item__title">Centro <small>para</small> Shopping</span><span class="popular-places-item__price">Kz 18</span><span data-uk-icon="chevron-right"></span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-steps" id="como-funciona">
+                <div class="uk-section uk-container">
+                    <div class="section-title uk-text-center">
+                        <div class="uk-h2">Como Funciona</div>
+                    </div>
+                    <div class="section-content">
+                        <div data-uk-slider="finite: true">
+                            <div class="uk-position-relative" tabindex="-1">
+                                <ul class="uk-grid uk-grid-large uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m">
+                                    <li>
+                                        <div class="step-item">
+                                            <div class="step-item__icon">
+                                                <div class="step-item__icon-box"><i class="flaticon-money"></i></div>
+                                            </div>
+                                            <div class="step-item__title">Solicite sua corrida</div>
+                                            <div class="step-item__text">Peça pelo app ou telefone. Escolha táxi, moto ou transfer em poucos toques, a qualquer hora.</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="step-item">
+                                            <div class="step-item__icon">
+                                                <div class="step-item__icon-box"><i class="flaticon-car-repair-check-list"></i></div>
+                                            </div>
+                                            <div class="step-item__title">Confirme e acompanhe</div>
+                                            <div class="step-item__text">Veja a tarifa antes de confirmar e acompanhe o motorista em tempo real pelo GPS.</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="step-item">
+                                            <div class="step-item__icon">
+                                                <div class="step-item__icon-box"><i class="flaticon-car"></i></div>
+                                            </div>
+                                            <div class="step-item__title">Viaje com segurança</div>
+                                            <div class="step-item__text">Motoristas verificados e veículos revisados. Pague com pix, cartão ou dinheiro.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-medium-top"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-best-drivers" id="frota">
+                <div class="uk-background-muted">
+                    <div class="uk-section uk-container">
+                        <div class="section-title uk-text-center">
+                            <div class="uk-h2">Nossa frota e motoristas</div>
+                            <p>Carros novos, motos bem revisadas e motoristas verificados<br> para deixar você no destino com segurança e pontualidade</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="uk-grid uk-grid-medium uk-child-width-1-2@s uk-child-width-1-3@m" data-uk-grid>
+                                <div>
+                                    <div class="driver-card">
+                                        <div class="driver-card__media"><img src="assets/img/car-1.jpg" alt="car"></div>
+                                        <div class="driver-card__body">
+                                            <div class="driver-card__user"> <img src="assets/img/driver-1.png" alt="motorista">
+                                                <span>Carlos Andrade</span>
+
+
+                                            </div>
+                                            <div class="driver-card__info">
+                                                <div class="driver-card__date">Táxi Confort<br> Disponível 24h</div>
+                                                <div class="driver-card__price">Tarifa a partir de <b>Kz 4,50/km</b></div>
+                                            </div>
+                                            <div class="driver-card__services">
+                                                <ul>
+                                                    <li><img src="assets/img/driver-service-1.png" alt="servico"><span>Motorista verificado e identificado</span></li>
+                                                    <li><img src="assets/img/driver-service-2.png" alt="servico"><span>Veículo revisado e com ar-condicionado</span></li>
+                                                    <li><img src="assets/img/driver-service-3.png" alt="servico"><span>Pagamento por pix, cartão ou dinheiro</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="driver-card">
+                                        <div class="driver-card__media"><img src="assets/img/car-2.jpg" alt="car"></div>
+                                        <div class="driver-card__body">
+                                            <div class="driver-card__user"> <img src="assets/img/driver-2.png" alt="motorista"><span>Ana Souza</span></div>
+                                            <div class="driver-card__info">
+                                                <div class="driver-card__date">Mototáxi<br> Disponível 24h</div>
+                                                <div class="driver-card__price">Tarifa a partir de <b>Kz 3,00/km</b></div>
+                                            </div>
+                                            <div class="driver-card__services">
+                                                <ul>
+                                                    <li><img src="assets/img/driver-service-1.png" alt="servico"><span>Motorista verificado e identificado</span></li>
+                                                    <li><img src="assets/img/driver-service-2.png" alt="servico"><span>Veículo revisado e com ar-condicionado</span></li>
+                                                    <li><img src="assets/img/driver-service-3.png" alt="servico"><span>Pagamento por pix, cartão ou dinheiro</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="driver-card">
+                                        <div class="driver-card__media"><img src="assets/img/car-3.jpg" alt="car"></div>
+                                        <div class="driver-card__body">
+                                            <div class="driver-card__user"> <img src="assets/img/driver-3.png" alt="motorista"><span>Marcos Lima</span></div>
+                                            <div class="driver-card__info">
+                                                <div class="driver-card__date">Táxi Executivo<br> Disponível 24h</div>
+                                                <div class="driver-card__price">Tarifa a partir de <b>Kz 6,90/km</b></div>
+                                            </div>
+                                            <div class="driver-card__services">
+                                                <ul>
+                                                    <li><img src="assets/img/driver-service-1.png" alt="servico"><span>Motorista verificado e identificado</span></li>
+                                                    <li><img src="assets/img/driver-service-2.png" alt="servico"><span>Veículo revisado e com ar-condicionado</span></li>
+                                                    <li><img src="assets/img/driver-service-3.png" alt="servico"><span>Pagamento por pix, cartão ou dinheiro</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="driver-card">
+                                        <div class="driver-card__media"><img src="assets/img/car-4.jpg" alt="car"></div>
+                                        <div class="driver-card__body">
+                                            <div class="driver-card__user"> <img src="assets/img/driver-1.png" alt="driver-pic"><span>Carlos Andrade</span></div>
+                                            <div class="driver-card__info">
+                                                <div class="driver-card__date">Táxi Popular<br> Disponível 24h</div>
+                                                <div class="driver-card__price">Tarifa a partir de <b>Kz 4,00/km</b></div>
+                                            </div>
+                                            <div class="driver-card__services">
+                                                <ul>
+                                                    <li><img src="assets/img/driver-service-1.png" alt="servico"><span>Motorista verificado e identificado</span></li>
+                                                    <li><img src="assets/img/driver-service-2.png" alt="servico"><span>Veículo revisado e com ar-condicionado</span></li>
+                                                    <li><img src="assets/img/driver-service-3.png" alt="servico"><span>Pagamento por pix, cartão ou dinheiro</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="driver-card">
+                                        <div class="driver-card__media"><img src="assets/img/car-5.jpg" alt="car"></div>
+                                        <div class="driver-card__body">
+                                            <div class="driver-card__user"> <img src="assets/img/driver-2.png" alt="motorista"><span>Ana Souza</span></div>
+                                            <div class="driver-card__info">
+                                                <div class="driver-card__date">Transfer Aeroporto<br> Disponível 24h</div>
+                                                <div class="driver-card__price">A partir de <b>Kz 75,00</b></div>
+                                            </div>
+                                            <div class="driver-card__services">
+                                                <ul>
+                                                    <li><img src="assets/img/driver-service-1.png" alt="servico"><span>Motorista verificado e identificado</span></li>
+                                                    <li><img src="assets/img/driver-service-2.png" alt="servico"><span>Veículo revisado e com ar-condicionado</span></li>
+                                                    <li><img src="assets/img/driver-service-3.png" alt="servico"><span>Pagamento por pix, cartão ou dinheiro</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="driver-card">
+                                        <div class="driver-card__media"><img src="assets/img/car-6.jpg" alt="car"></div>
+                                        <div class="driver-card__body">
+                                            <div class="driver-card__user"> <img src="assets/img/driver-3.png" alt="motorista"><span>Marcos Lima</span></div>
+                                            <div class="driver-card__info">
+                                                <div class="driver-card__date">Van / Grupos<br> Disponível 24h</div>
+                                                <div class="driver-card__price">Tarifa a partir de <b>Kz 8,00/km</b></div>
+                                            </div>
+                                            <div class="driver-card__services">
+                                                <ul>
+                                                    <li><img src="assets/img/driver-service-1.png" alt="servico"><span>Motorista verificado e identificado</span></li>
+                                                    <li><img src="assets/img/driver-service-2.png" alt="servico"><span>Veículo revisado e com ar-condicionado</span></li>
+                                                    <li><img src="assets/img/driver-service-3.png" alt="servico"><span>Pagamento por pix, cartão ou dinheiro</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-about">
+                <div class="section-about__img"><img src="assets/img/img-car.png" alt=""></div>
+                <div class="uk-section uk-container">
+                    <div class="uk-grid uk-child-width-1-2@m" data-uk-grid>
+                        <div>
+                            <div class="section-title">
+                                <div class="uk-h2">Sobre a OX4</div>
+                            </div>
+                            <div class="section-content">
+                                <ul class="about-list">
+                                    <li>
+                                        <div class="about-list-item">
+                                            <div class="about-list-item__icon"><img src="assets/img/about-1.svg" alt="ico-about" data-uk-svg></div>
+                                            <div class="about-list-item__desc">
+                                                <div class="about-list-item__title">Milhões de viagens seguras</div>
+                                                <div class="about-list-item__desc">Conectamos passageiros a motoristas confiáveis todos os dias, com frota nova, preço justo e pontualidade em cada corrida.</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="about-list-item">
+                                            <div class="about-list-item__icon"><img src="assets/img/about-2.svg" alt="ico-about" data-uk-svg></div>
+                                            <div class="about-list-item__desc">
+                                                <div class="about-list-item__title">Táxi, moto e transfer</div>
+                                                <div class="about-list-item__desc">Escolha o serviço ideal para cada trajeto: corrida rápida de moto, táxi comum ou confort, transfer para o aeroporto e viagens em grupo.</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="about-list-item">
+                                            <div class="about-list-item__icon"><img src="assets/img/about-3.svg" alt="ico-about" data-uk-svg></div>
+                                            <div class="about-list-item__desc">
+                                                <div class="about-list-item__title">Simples e inteligente</div>
+                                                <div class="about-list-item__desc">Solicite em segundos, veja a tarifa antes de confirmar, acompanhe o motorista pelo GPS e pague como preferir.</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="uk-visible@m"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-location">
+                <div class="uk-section uk-container">
+                    <div class="location">
+                        <div class="uk-grid uk-grid-small uk-child-width-1-2@m" data-uk-grid>
+                            <div>
+                                <div class="location__title">Atendimento <b>24 horas</b> em toda a cidade</div>
+                                <div class="location__text">A OX4 Transportes está sempre perto de você. Solicite pelo aplicativo, pelo telefone ou chame um táxi na rua - nossa central fica online dia e noite, todos os dias do ano.</div>
+                                <div class="uk-grid uk-child-width-1-2" data-uk-grid>
+                                    <div>
+                                        <div class="location-contact-item">
+                                            <div class="location-contact-item__icon"><i class="fas fa-phone-alt"></i></div>
+                                            <div class="location-contact-item__desc">
+                                                <div class="location-contact-item__title">Para solicitar corridas</div>
+                                                <div class="location-contact-item__phone"><a href="tel:+244924291225">+244 924 291 225</a></div>
+                                                <div class="location-contact-item__time">Disponível 24 horas</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="location-contact-item">
+                                            <div class="location-contact-item__icon"><i class="fas fa-phone-alt"></i></div>
+                                            <div class="location-contact-item__desc">
+                                                <div class="location-contact-item__title">Dúvidas e suporte</div>
+                                                <div class="location-contact-item__phone"><a href="tel:+244924291225">+244 924 291 225</a></div>
+                                                <div class="location-contact-item__time">WhatsApp e central 24/7</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="location__map"><img class="location__img" src="assets/img/img-location-map.png" alt="img-location-map">
+                                    <ul class="location__numbers">
+                                        <li><span>1.470</span><span>Veículos na frota</span></li>
+                                        <li><span>4,9</span><span>Nota dos clientes</span></li>
+                                        <li><span>24h</span><span>Atendimento diário</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-reviews">
+                <div class="uk-section uk-container">
+                    <div class="section-title uk-text-center">
+                        <div class="uk-h2">O que dizem nossos clientes</div>
+                    </div>
+                    <div class="section-content">
+                        <div class="reviews-slider">
+                            <div data-uk-slideshow="max-height: 270; min-height: 250; animation: scale">
+                                <div class="reviews-slider__users">
+                                    <ul>
+                                        <li class="uk-animation-scale-up" data-uk-slideshow-item="0"><img class="uk-width-1-1" src="assets/img/img-reviews.jpg" alt="img-reviews"></li>
+                                        <li class="uk-animation-scale-up" data-uk-slideshow-item="1"><img class="uk-width-1-1" src="assets/img/img-reviews.jpg" alt="img-reviews"></li>
+                                        <li class="uk-animation-scale-up" data-uk-slideshow-item="2"><img class="uk-width-1-1" src="assets/img/img-reviews.jpg" alt="img-reviews"></li>
+                                    </ul>
+                                </div>
+                                <div class="reviews-slider__content">
+                                    <div class="reviews-slider__box">
+                                        <ul class="uk-slideshow-items">
+                                            <li>
+                                                <div class="reviews-slider-item">
+                                                    <div class="reviews-slider-item__text">Precisei ir ao aeroporto de madrugada e a OX4 chegou em minutos. Motorista educado, carro impecável e a tarifa foi exatamente a combinada.</div>
+                                                    <div class="reviews-slider-item__user">Mariana Alves</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="reviews-slider-item">
+                                                    <div class="reviews-slider-item__text">Uso o mototáxi da OX4 quase todo dia para o trabalho. Rápido, seguro e com pagamento pelo app. Recomendo para quem tem pressa.</div>
+                                                    <div class="reviews-slider-item__user">Rafael Prado</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="reviews-slider-item">
+                                                    <div class="reviews-slider-item__text">Fiz um transfer com a família para o aeroporto: espaço para as malas, pontualidade e atendimento nota 10. Já virou nossa opção preferida.</div>
+                                                    <div class="reviews-slider-item__user">Juliana Lima</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="reviews-slider__dots">
+                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex uk-flex-center"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-blog">
+                <div class="uk-background-muted">
+                    <div class="uk-section uk-container">
+                        <div class="section-title uk-text-center">
+                            <div class="uk-h2">Novidades da OX4</div>
+                            <p>Dicas de segurança, novidades da frota e tudo sobre mobilidade<br> para você viajar melhor todos os dias</p>
+                        </div>
+                        <div class="section-content">
+                            <div data-uk-slider>
+                                <div class="uk-position-relative" tabindex="-1">
+                                    <ul class="uk-slider-items uk-grid uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m">
+                                        <li>
+                                            <div class="blog-card">
+                                                <div class="blog-card__box">
+                                                    <div class="blog-card__media"><a href="05_blog-post.html"><img src="assets/img/blog-thumb-1.jpg" alt="Peça seu táxi em 3 toques" /></a>
+                                                        <div class="blog-card__date"> <span>Jan</span><span>17</span></div>
+                                                    </div>
+                                                    <div class="blog-card__body">
+                                                        <div class="blog-card__info">
+                                                            <div class="blog-card__author"> <i class="fas fa-user"></i>Redação OX4</div>
+                                                            <div class="blog-card__category"> <i class="fas fa-folder-open"></i>Dicas</div>
+                                                        </div>
+                                                        <div class="blog-card__title"> <a href="05_blog-post.html">Peça seu táxi em 3 toques pelo app</a></div>
+                                                        <div class="blog-card__intro">
+                                                            <p>Reserve com antecedência e viaje sem imprevistos: espaços para malas, horário combinado e motorista esperando você ...</p>
+                                                        </div>
+                                                        <div class="blog-card__more"><a class="uk-button uk-button-default" href="05_blog-post.html">Leia mais</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="blog-card">
+                                                <div class="blog-card__box">
+                                                    <div class="blog-card__media"><a href="05_blog-post.html"><img src="assets/img/blog-thumb-2.jpg" alt="Viaje de moto com segurança" /></a>
+                                                        <div class="blog-card__date"> <span>Jan</span><span>25</span></div>
+                                                    </div>
+                                                    <div class="blog-card__body">
+                                                        <div class="blog-card__info">
+                                                            <div class="blog-card__author"> <i class="fas fa-user"></i>Redação OX4</div>
+                                                            <div class="blog-card__category"> <i class="fas fa-folder-open"></i>Dicas</div>
+                                                        </div>
+                                                        <div class="blog-card__title"> <a href="05_blog-post.html">5 dicas para viajar de moto com segurança</a></div>
+                                                        <div class="blog-card__intro">
+                                                            <p>Capacete, jaqueta e trajeto planejado: confira o checklist completo da OX4 antes de sair de moto pela cidade ...</p>
+                                                        </div>
+                                                        <div class="blog-card__more"><a class="uk-button uk-button-default" href="05_blog-post.html">Leia mais</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="blog-card">
+                                                <div class="blog-card__box">
+                                                    <div class="blog-card__media"><a href="05_blog-post.html"><img src="assets/img/blog-thumb-3.jpg" alt="Transfer para o aeroporto sem stress" /></a>
+                                                        <div class="blog-card__date"> <span>Feb</span><span>10</span></div>
+                                                    </div>
+                                                    <div class="blog-card__body">
+                                                        <div class="blog-card__info">
+                                                            <div class="blog-card__author"> <i class="fas fa-user"></i>Redação OX4</div>
+                                                            <div class="blog-card__category"> <i class="fas fa-folder-open"></i>Dicas</div>
+                                                        </div>
+                                                        <div class="blog-card__title"> <a href="05_blog-post.html">Transfer para o aeroporto sem stress</a></div>
+                                                        <div class="blog-card__intro">
+                                                            <p>Escolha o veículo, informe o destino e confirme a corrida. Em segundos o motorista mais próximo já está a caminho de você ...</p>
+                                                        </div>
+                                                        <div class="blog-card__more"><a class="uk-button uk-button-default" href="05_blog-post.html">Leia mais</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="blog-card">
+                                                <div class="blog-card__box">
+                                                    <div class="blog-card__media"><a href="05_blog-post.html"><img src="assets/img/blog-thumb-1.jpg" alt="Peça seu táxi em 3 toques" /></a>
+                                                        <div class="blog-card__date"> <span>Jan</span><span>17</span></div>
+                                                    </div>
+                                                    <div class="blog-card__body">
+                                                        <div class="blog-card__info">
+                                                            <div class="blog-card__author"> <i class="fas fa-user"></i>Redação OX4</div>
+                                                            <div class="blog-card__category"> <i class="fas fa-folder-open"></i>Dicas</div>
+                                                        </div>
+                                                        <div class="blog-card__title"> <a href="05_blog-post.html">Peça seu táxi em 3 toques pelo app</a></div>
+                                                        <div class="blog-card__intro">
+                                                            <p>Escolha o veículo, informe o destino e confirme a corrida. Em segundos o motorista mais próximo já está a caminho de você ...</p>
+                                                        </div>
+                                                        <div class="blog-card__more"><a class="uk-button uk-button-default" href="05_blog-post.html">Leia mais</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-top"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-download">
+                <div class="uk-section uk-container">
+                    <div class="download-box">
+                        <div class="download-box__img"><img src="assets/img/img-download.png" alt="img-download"></div>
+                        <div class="download-box__inner">
+                            <div class="download-box__title">Baixe o app OX4</div>
+                            <div class="download-box__text">Peça um táxi ou uma moto, acompanhe a corrida em tempo<br> real e pague direto pelo celular. <br> <b>Baixe o app e viaje com a OX4</b>.</div>
+                            <div class="download-box__btn"><a href="01_landing_page.html#!"><img src="assets/img/google.png" alt="google"></a><a href="01_landing_page.html#!"><img src="assets/img/apple.png" alt="apple"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page-footer">
+            <div class="uk-container">
+                <div class="page-footer__inner">
+                    <div class="page-footer__logo">
+                        <div class="logo"><a class="logo__link" href="01_landing_page.html"><img class="logo__img" src="assets/img/logo-white.png" alt="OX4 Transportes"></a></div>
+                    </div>
+                    <div class="page-footer__text">
+                        <p>OX4 Transportes &bull; Táxi, moto e transfer com segurança, preço justo<br> e atendimento 24 horas em toda a cidade</p>
+                    </div>
+                    <div class="page-footer__social">
+                        <ul class="social">
+                            <li><a href="01_landing_page.html#!"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="01_landing_page.html#!"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="01_landing_page.html#!"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="01_landing_page.html#!"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="01_landing_page.html#!"><i class="fas fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="page-footer__copy"> <span>&copy; 2026 OX4 Transportes Ltda. Todos os direitos reservados.</span></div>
+                </div>
+            </div><!-- Additional blocks-->
+            <div id="offcanvas" data-uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-flex-between"><button class="uk-offcanvas-close" type="button" data-uk-close=""></button>
+                    <div class="uk-margin">
+                        <div class="uk-margin-bottom">
+                            <div class="logo"><a class="logo__link" href="01_landing_page.html"><img class="logo__img" src="assets/img/logo-white.png" alt="OX4 Transportes"></a></div>
+                        </div>
+                        <div class="uk-margin">
+                            <ul class="uk-nav uk-nav-default uk-nav-parent-icon" data-uk-nav>
+                                <li><a href="01_landing_page.html"> <img src="assets/img/search.svg" data-uk-svg alt="home">Início</a></li>
+                                <li class="uk-parent"><a href="02-search-1.html"> <img src="assets/img/car.svg" data-uk-svg alt="servicos">Serviços</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="02-search-1.html">Solicitar Táxi</a></li>
+                                        <li><a href="02-search-2.html">Solicitar Moto</a></li>
+                                        <li><a href="02-search-3.html">Transfer e Corridas</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a href="01_landing_page.html#como-funciona">Como Funciona</a></li>
+                                <li class="uk-parent"> <a href="03_blog-1.html"> <img src="assets/img/news-paper.svg" data-uk-svg alt="news-paper">Notícias </a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="03_blog-1.html">Lista de notícias</a></li>
+                                        <li><a href="04_blog-2.html">Grade de notícias</a></li>
+                                        <li><a href="05_blog-post.html">Matéria</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a href="06_contact.html"> <img src="assets/img/help2.svg" data-uk-svg alt="help2">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="uk-margin"><a class="uk-button uk-button-danger uk-width-1-1" href="tel:+244924291225"> <img src="assets/img/call.svg" alt="call" data-uk-svg><span>+244 924 291 225</span></a></div>
+                </div>
+            </div>
+            <div class="uk-flex-top" id="callback" data-uk-modal="">
+                <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical"><button class="uk-modal-close-default" type="button" data-uk-close=""></button>
+                    <p>Em instantes nossa central entra em contato com você. Se preferir falar agora, ligue para <b>+244 924 291 225</b> - atendemos 24 horas, todos os dias.</p>
+                </div>
+            </div><!-- End Additional blocks-->
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/uikit-icons.min.js"></script>
+    <script src="assets/js/datepicker.min.js"></script>
+    <script src="assets/js/i18n/datepicker.en.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
